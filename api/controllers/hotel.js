@@ -84,7 +84,7 @@ export const countByType = async (req, res, next) => {
   }
 };
 
-export const getHotelhalls = async (req, res, next) => {
+export const getHotelHalls = async (req, res, next) => {
   try {
     const hotel = await Hotel.findById(req.params.id);
     const list = await Promise.all(
